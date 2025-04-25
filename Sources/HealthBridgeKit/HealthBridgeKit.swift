@@ -8,6 +8,8 @@
 import Foundation
 import HealthKit
 
+@available(macOS 13.0, *)
+@MainActor
 public class HealthBridgeKit {
     public static let shared = HealthBridgeKit()
     private let healthStore = HKHealthStore()
